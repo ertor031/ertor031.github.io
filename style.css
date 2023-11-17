@@ -18,7 +18,11 @@ body {
 .inner {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 230px 230px 230px;
+	grid-template-rows: 250px 250px 250px;
+}
+
+.Price{
+  font-weight: bold;
 }
 
 .img {
@@ -53,7 +57,7 @@ button{
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin: 10px;
+	margin: 1px;
 	transition: background .2s linear;
 }
 

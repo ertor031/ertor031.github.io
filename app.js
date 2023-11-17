@@ -4,20 +4,19 @@ tg.expand();
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let item = "";
 
 const itemsContainer = document.getElementById("items-container");
 const userCard = document.getElementById("usercard");
 
-
+let data;
 
 const products = [
-	{ id: "1", name: "Jordan", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
-	{ id: "2", name: "Nike", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
-	{ id: "3", name: "Adidas", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category1" },
-	{ id: "4", name: "Nike", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
-	{ id: "5", name: "KC",imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category1" },
-	{ id: "6", name: "Nike", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
+	{ id: "1", price: "1004$" ,name: "Jordan", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
+	{ id: "2", price: "1003$" , name: "Nike", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
+	{ id: "3", price: "1002$" , name: "Adidas", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category1" },
+	{ id: "4", price: "1003$" , name: "Nike", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
+	{ id: "5", price: "1002$" , name: "KC",imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category1" },
+	{ id: "6", price: "1032$" , name: "Nike", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
 ];
 
 function filterItems(category) {
@@ -47,6 +46,10 @@ products.forEach(product => {
     productName.innerText = product.name;
     productName.classList.add("productName"); // Добавляем класс productName
 
+    const productDescription = document.createElement("p");
+    productDescription.innerText = product.price; // Замените 'description' на ваше свойство
+    productDescription.classList.add("Price"); // Добавляем класс productDescription
+
     const button = document.createElement("button");
     button.classList.add("btn");
     button.id = `btn${product.id}`;
@@ -54,6 +57,7 @@ products.forEach(product => {
 
     itemDiv.appendChild(img);
     itemDiv.appendChild(productName); // Добавляем название под картинкой
+    itemDiv.appendChild(productDescription); // Добавляем описание под названием
     itemDiv.appendChild(button);
 
     itemsContainer.appendChild(itemDiv);
@@ -62,8 +66,15 @@ products.forEach(product => {
         if (tg.MainButton.isVisible) {
             tg.MainButton.hide();
         } else {
-            tg.MainButton.setText(`Вы выбрали товар ${product.productName}!`);
-            item = product.id;
+            tg.MainButton.setText(`Подтвердить`);
+
+            data = {
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                category: product.category
+            }
+
             tg.MainButton.show();
         }
     });
@@ -71,9 +82,8 @@ products.forEach(product => {
 
 
 
-
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
+	tg.sendData(JSON.stringify(data));
 });
 
 const p = document.createElement("p");
