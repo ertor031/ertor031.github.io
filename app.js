@@ -17,6 +17,7 @@ const products = [
 	{ id: "4", price: "1003$" , name: "Nike", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
 	{ id: "5", price: "1002$" , name: "KC",imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category1" },
 	{ id: "6", price: "1032$" , name: "Nike", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
+	{ id: "6", price: "1099$" , name: "Kyrtka", imgSrc: "png/Traktors.png", buttonText: "Добавить", category: "category2" },
 ];
 
 function filterItems(category) {
