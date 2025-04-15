@@ -1,0 +1,162 @@
+body,
+html {
+    margin: 0;
+    background-color: black;
+    padding: 0;
+}
+
+.hero__container {
+    margin-top: 100px;
+}
+
+.wrap-login-admin {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.support__logo {
+    width: 50%;
+}
+
+.login-admin {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    background-color: #fff;
+    padding: 15px 30px 25px;
+    box-sizing: border-box;
+}
+
+.login-admin input {
+    height: 35px;
+    outline: none;
+}
+
+.login-admin button {
+    margin-top: 20px;
+    display: flex;
+    height: 40px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.application {
+    width: 95%;
+    margin: 20px auto;
+    color: #333;
+}
+
+.application-block .info-col {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid silver;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.application-block .info-col+.info-col {
+    margin-top: 15px;
+}
+
+.application-block+.application-block {
+    margin-top: 20px;
+}
+
+.application-block {
+    background-color: #eee;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.control {
+    width: 300px;
+}
+
+.delete {
+    background-color: tomato;
+    color: #fff;
+}
+
+.succes {
+    background-color: green;
+    color: #fff;
+}
+
+.pending {
+    background-color: grey;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px 0px 10px;
+}
+
+.control-admin {
+    text-align: center;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+}
+
+.control-admin a+a {
+    margin-top: 20px;
+}
+
+.control-admin a {
+    color: #333;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.lists-workers {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.block-worker {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-application {
+    display: flex;
+    justify-content: space-between;
+    align-content: inherit;
+}
+
+.title-application span {
+    display: flex;
+    align-items: center;
+}
+
+.block-coin {
+    color: #fff;
+}
+
+.block-coin input {
+    margin-left: 20px;
+}
+
+.block-coin+.block-coin {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.header__logo img {
+    width: 150px;
+}
+
+.min {
+    color: red;
+}
+
+

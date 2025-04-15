@@ -1,0 +1,176 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="shortcut icon" href="Logo%20small%20white.svg" type="image/png">
+            <title>SpotExchange</title>
+
+            <link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-reboot.min.css" rel="stylesheet">
+<link href="../css/animate.min.css" rel="stylesheet">
+<link href="../css/fonts.css" rel="stylesheet">
+<link href="../css/style.min.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+            <script>const AJAX_URL = '/ajax';</script>
+            <script>
+                let bonus = 2 + 100;
+                let minUSD = 50;
+                let maxUSD = 200000;
+            </script>
+        </head>
+
+        <body style="overflow: auto;">
+                            <div class="wrapper">
+                    
+<div class="preloader" style="display: none;">
+    <div class="preloader__circle"></div>
+</div>
+
+<header class="header wow animate__fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+    <div class="container header__container">
+        <div class="header__body">
+            <a class="header__logo header__logo-hide" href="/">
+                <img src="Logo%20White.svg" alt="logo">
+            </a>
+
+            <div class="header__hide">
+                <a class="header__logo" href="/">
+                    <img src="Logo%20White.svg" alt="logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="/#about">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="/#exchange">Exchange</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="/#how-exchange">How exchange</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="/#transactions">Transactions</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="/#support">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__wrapper">
+                    <!-- <div class="header__lang">
+                        <div class="header__lang-lang">
+                            <a class="header__lang-wrapper" href="">
+                                <img src="/images/ua.svg" alt="ua">
+                                <div class="header__lang-text">
+                                    Eng
+                                </div>
+                            </a>
+                            <a class="header__lang-wrapper header__lang-dropdown"
+                                href="#">
+                                <img src="/images/ru.svg" alt="ru">
+                                <div class="header__lang-text">
+                                    Ru
+                                </div>
+                            </a>
+                        </div>
+                        <img class="header__lang-arrow" src="/images/arrow.svg" alt="arrow">
+                    </div> -->
+                    <a class="header__btn" href="/#exchange">
+                        Exchange
+                    </a>
+                </div>
+            </div>
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header__burger-content">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="/#about">About</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="/#exchange">Exchange</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="/#how-exchange">How exchange</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="/#transactions">Transactions</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="/#support">Support</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__wrapper">
+                <!-- <div class="header__lang">
+                    <div class="header__lang-lang">
+                        <a class="header__lang-wrapper" href="">
+                            <img src="/images/ua.svg" alt="ua">
+                            <div class="header__lang-text">
+                                Eng
+                            </div>
+                        </a>
+                        <a class="header__lang-wrapper header__lang-dropdown" href="#">
+                            <img src="/images/ru.svg" alt="ru">
+                            <div class="header__lang-text">
+                                Ru
+                            </div>
+                        </a>
+                    </div>
+                    <img class="header__lang-arrow" src="/images/arrow.svg" alt="arrow">
+                </div> -->
+                <a class="header__btn" href="/#exchange">
+                    Exchange
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+                    <main class="main">
+                        <div class="site-error">
+
+    <h1>Not Found (#404)</h1>
+
+    <div class="alert alert-danger">
+        Page not found.    </div>
+
+    <p>
+        The above error occurred while the Web server was processing your request.
+    </p>
+    <p>
+        Please contact us if you think this is a server error. Thank you.
+    </p>
+</div>
+                    </main>
+
+                    <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__start">
+            <img class="footer__logo" src="Logo%20small%20white.svg" alt="logo">
+            <div class="footer__text">
+                ALL RIGHTS RESERVED © 2022            </div>
+        </div>
+        <div class="footer__end">
+            <a class="footer__link" href="https://telegram.me/spot_exchange">
+                <img src="tg%281%29.svg" alt="tg">
+            </a>
+        </div>
+    </div>
+</footer>
+                </div>
+            <script src="../js/jquery.js"></script>
+<script src="../js/yii.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/transaction.js"></script>        </body>
+    </html>

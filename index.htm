@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script>
+        const minUSD = 40; 
+        const maxUSD = 90136; 
+        const tg_link = "https://t.me/Sup_nextas";  
+        const promostatus = 0;
+        var percent = 7;
+        var promo = [{"promo":"LKSL-JKDH-DJHD"}];       
+        function contains(elem) {
+            for (let item of promo) {
+                let promo = item.promo;
+                if (promo === elem) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="fonts/LOGOex.svg" type="image/png">
+    <title>CryptoMetas</title>
+    <meta property="image" content="../fonts/LOGOex.svg">
+    <meta name="title" content="CoinNexta - CoinNexta exchange">
+    <meta name="description" content="The leading cryptocurrency exchange platform offers different trading options, provides 24/7 customer support, high level of security.">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"
+    <script>
+        const AJAX_URL = '/ajax';
+    </script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+
+<body style="overflow: auto;">
+    <div class="wrapper">
+
+        <div class="preloader" style="display: none;">
+            <div class="preloader__circle"></div>
+        </div>
+
+        <header class="header wow animate__fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+            <div class="container header__container">
+                <div class="header__body">
+                    <a class="header__logo header__logo-hide" href="index.htm">
+                        <img src="fonts/LOGOex.svg" alt="logo">
+                    </a>
+
+                    <div class="header__hide">
+                        <a class="header__logo" href="index.htm">
+                            <img src="fonts/LOGOex.svg" alt="logo">
+                        </a>
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <a class="header__link" href="#about">О нас</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#exchange">Обмен</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#how-exchange">Как обменять</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#transactions">Транзакции</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#support">Поддержка</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="header__wrapper">
+                            <!-- <div class="header__lang">
+                        <div class="header__lang-lang">
+                            <a class="header__lang-wrapper" href="">
+                                <img src="/images/ua.svg" alt="ua">
+                                <div class="header__lang-text">
+                                    Eng
+                                </div>
+                            </a>
+                            <a class="header__lang-wrapper header__lang-dropdown"
+                                href="#">
+                                <img src="/images/ru.svg" alt="ru">
+                                <div class="header__lang-text">
+                                    Ru
+                                </div>
+                            </a>
+                        </div>
+                        <img class="header__lang-arrow" src="/images/arrow.svg" alt="arrow">
+                    </div> -->
+                            <a class="header__btn" href="#exchange">
+                        Обмен
+                    </a>
+                        </div>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="header__burger-content">
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__link" href="#about">О нас</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#exchange">Обмен</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#how-exchange">Как обменять</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#transactions">Транзакции</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#support">Поддержка</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__wrapper">
+                        <!-- <div class="header__lang">
+                    <div class="header__lang-lang">
+                        <a class="header__lang-wrapper" href="">
+                            <img src="/images/ua.svg" alt="ua">
+                            <div class="header__lang-text">
+                                Eng
+                            </div>
+                        </a>
+                        <a class="header__lang-wrapper header__lang-dropdown" href="#">
+                            <img src="/images/ru.svg" alt="ru">
+                            <div class="header__lang-text">
+                                Ru
+                            </div>
+                        </a>
+                    </div>
+                    <img class="header__lang-arrow" src="/images/arrow.svg" alt="arrow">
+                </div> -->
+                        <a class="header__btn" href="#exchange">
+                    Обмен
+                </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="hero" id="about">
+                <div class="container hero__container">
+                    <h1 class="title hero__title wow animate__fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        Новая современная платформа обмена криптовалют — <span>CoinNexta</span>
+                    </h1>
+
+                    <h2 class="subtitle hero__subtitle wow animate__fadeInUp" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                        Мы рады представить вам новый крупнейший сервис по обмену вашей криптовалюты. Вы можете легко обменять любую монету, представленную на Binance, с самой низкой комиссией!
+                    </h2>
+
+                    <img class="hero__img wow animate__fadeInUp" data-wow-delay=".5s" src="images/ctypto.png" alt="crypto" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+
+                    <div class="hero__text wow animate__fadeInUp" data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeInUp;">
+                        И много других монет доступны!
+                    </div>
+
+                    <a class="hero__btn wow animate__fadeInUp" data-wow-delay="1s" href="#exchange" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">Обменять</a>
+                </div>
+            </section>
+
+            <section class="exchange" id="exchange">
+                <div class="container exchange__container">
+                    <div class="exchange__text wow animate__fadeInUp" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                        НАЧНИТЕ ОБМЕН ВСЕГО В НЕСКОЛЬКО КЛИКОВ!
+                    </div>
+
+                    <h3 class="title exchange__title wow animate__fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        ВЫБЕРИТЕ ПАРУ ДЛЯ ОБМЕНА
+                    </h3>
+
+                    <div class="exchange__wrapper wow animate__fadeInUp" data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeInUp;">
+                    
+                        <div class="exchange__block exchange__block_big">
+                            <div class="exchange__block-title">
+                                ВЫ ПОЛУЧАЕТЕ
+                            </div>
+                            <div class="converter-container">
+                                <h2>Currency Converter</h2>
+                          
+                                <div class="content">
+                                  <div class="input-amount-container">
+                                    <input
+                                      type="number"
+                                      value="1.00"
+                                      placeholder="Enter amount"
+                                      class="input-amount"
+                                    />
+                          
+                                    <div class="swap-btn">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-6 h-6"
+                                      >
+                                        <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"
+                                        />
+                                      </svg>
+                                    </div>
+                                  </div>
+                          
+                                  <div class="dropdown-container" id="from">
+                                    <div class="input-container">
+                                      <img
+                                        class="input-flag"
+                                        src="https://www.countryflagicons.com/FLAT/64/US.png"
+                                        alt=""
+                                      />
+                          
+                                      <input
+                                        type="text"
+                                        placeholder="Search Here..."
+                                        class="currency-input"
+                                        value="USD - U.S. Dollar"
+                                      />
+                                    </div>
+                          
+                                    <div class="options">
+                                      <!-- <div class="option">
+                                    <div class="flag">
+                                      <img src="https://www.countryflagicons.com/FLAT/64/US.png" alt="" />
+                                    </div>
+                                    <div>USD - U.S. Dollar</div>
+                                  </div> -->
+                                    </div>
+                                  </div>
+                          
+                                  <div class="dropdown-container" id="to">
+                                    <div class="input-container">
+                                      <img
+                                        class="input-flag"
+                                        src="https://www.countryflagicons.com/FLAT/64/EU.png"
+                                        alt=""
+                                      />
+                          
+                                      <input
+                                        type="text"
+                                        placeholder="Search Here..."
+                                        class="currency-input"
+                                        value="EUR - Euro"
+                                      />
+                                    </div>
+                          
+                                    <div class="options">
+                                      <!-- <div class="option">
+                                    <div class="flag">
+                                      <img src="https://www.countryflagicons.com/FLAT/64/US.png" alt="" />
+                                    </div>
+                                    <div>USD - U.S. Dollar</div>
+                                  </div> -->
+                                    </div>
+                                  </div>
+                          
+                                  <div class="result"><span class="result-currency">USD </span>00</div>
+                                </div>
+                              </div>
+                          
+                        </div>
+                        <div class="exchange__block exchange__block_small">
+                            <div class="exchange__block-title">
+                                ЗАПОЛНИТЬ ПОЛЯ
+                            </div>
+                            <form class="exchange__block-form" method="post">
+
+                                <div class="exchange__block-wrapper">
+                                    <div class="exchange__block-text">
+                                        Адрес
+                                    </div>
+                                    <input class="exchange__block-input exchange__block-input-receive-address" type="text" placeholder="Ваш адрес" id="receive-address" name="receive-address" required="">
+                                    <p class="error_addr" style="color: red;"></p>
+                                </div>
+                                <div class="exchange__block-wrapper">
+                                    <div class="exchange__block-text">
+                                        E-mail
+                                    </div>
+                                    <input class="exchange__block-input exchange__block-input-email" type="email" placeholder="E-mail" name="E-mail" required="">
+                                    <p class="error_mail" style="color: red;"></p>
+                                </div>
+                                <div class="exchange__block-wrapper">
+                                    <div class="exchange__block-text">
+                                        Промо-код
+                                    </div>
+                                    <input class="exchange__block-input" type="text" id="referral_code" name="referral_code" placeholder="Промо">
+                                </div>
+                                <button class="exchange__block-btn" id="continue_btn" type="submit"><a id="continue_btn" style="color: #fff;">Обменять</a></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how-exchange" id="how-exchange">
+                <div class="container how-exchange__container">
+                    <div class="how-exchange__wrapper">
+                        <div class="how-exchange__start wow animate__fadeInLeft" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInLeft;">
+                            <div class="how-exchange__text">
+                                КАК ОБМЕНЯТЬ КРИПТОВАЛЮТУ?
+                            </div>
+                            <h3 class="title how-exchange__title">
+                                СЛЕДУЙТЕ ЭТИМ ПРОСТЫМ ШАГАМ:
+                            </h3>
+                            <img class="how-exchange__steps" src="images/steps.png" alt="steps">
+                        </div>
+                        <div class="how-exchange__end wow animate__fadeInRight" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight;">
+                            <img class="how-exchange__steps-2" src="images/steps2.png" alt="steps">
+                        </div>
+                    </div>
+                    <div class="how-exchange__blocks wow animate__fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="how-exchange__block">
+                            <div class="how-exchange__block-step">
+                                Шаг #1
+                            </div>
+                            <h4 class="how-exchange__block-title">
+                                Проверьте свой кошелек и получите бонус 15%!
+                            </h4>
+                            <div class="how-exchange__block-text">
+                                Введите свой адрес, чтобы получить бонус!
+                            </div>
+                            <input class="how-exchange__block-input" type="text" placeholder="Любой адрес монеты">
+                            <button class="how-exchange__block-btn">
+                                Проверьте кошелек на наличие бонуса
+                            </button>
+                        </div>
+                        <div class="how-exchange__block">
+                            <div class="how-exchange__block-step">
+                                Шаг #2
+                            </div>
+                            <h4 class="how-exchange__block-title">
+                                Выберите пару криптовалют
+                            </h4>
+                            <div class="how-exchange__block-text">
+                                Например Fatnom --> Avalanche.
+                            </div>
+                            <img src="images/1.png" alt="">
+                        </div>
+                        <div class="how-exchange__block">
+                            <div class="how-exchange__block-step">
+                                Шаг #3
+                            </div>
+                            <h4 class="how-exchange__block-title">
+                                Оплатите заявку после заполнения информационных полей
+                            </h4>
+                            <div class="how-exchange__block-text">
+                                После этого — ждите подтверждения!
+                            </div>
+                            <img class="how-exchange__block-img" src="images/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="transactions wow animate__fadeInUp" data-wow-delay=".25s" id="transactions" style="visibility: hidden; animation-delay: 0.25s; animation-name: none;">
+                <div class="container transactions__container">
+                    <h3 class="transactions__title">
+                         Транзакции
+                        <div class="transactions__title-circle">
+                            <span></span>
+                        </div>
+                    </h3>
+                    <div class="transactions__table-wrapper">
+                        <table class="transactions__table">
+                            <tbody>
+                                <tr class="transactions__tr-header">
+                                    <th class="transactions__th">TxHash</th>
+                                    <th class="transactions__th">Block ID</th>
+                                    <th class="transactions__th">От</th>
+                                    <th class="transactions__th">Кому</th>
+                                    <th class="transactions__th">Количество</th>
+                                    <th class="transactions__th">Время</th>
+                                </tr>
+                                <tr class="transactions__table-content">
+                                </tr>
+                                <tr class="transactions__tr">
+                                    <td class="transactions__td">wgggoaslmqb...</td>
+                                    <td class="transactions__td">372017</td>
+                                    <td class="transactions__td">A35JJF...</td>
+                                    <td class="transactions__td">38A0J0...</td>
+                                    <td class="transactions__td">9835.35 TRX</td>
+                                    <td class="transactions__td transactions__td_blue">Сейчас</td>
+                                </tr>
+                                <tr class="transactions__tr">
+                                    <td class="transactions__td">un89zp6xqn...</td>
+                                    <td class="transactions__td">156439</td>
+                                    <td class="transactions__td">F0J0B4...</td>
+                                    <td class="transactions__td">37F51B...</td>
+                                    <td class="transactions__td">3063.48 FTM</td>
+                                    <td class="transactions__td transactions__td_blue">Сейчас</td>
+                                </tr>
+                                <tr class="transactions__tr">
+                                    <td class="transactions__td">t6z9t6otlb...</td>
+                                    <td class="transactions__td">109767</td>
+                                    <td class="transactions__td">JJ5T9J...</td>
+                                    <td class="transactions__td">FJKT59...</td>
+                                    <td class="transactions__td">0.49 ETH</td>
+                                    <td class="transactions__td transactions__td_blue">Сейчас</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="support" id="support">
+                <div class="container support__container">
+                    <h3 class="support__title">
+                        Отвечаем на ваши вопросы 24/7
+                    </h3>
+                    <div class="support__text">
+                        Отправьте сообщение в нашу поддержку!
+                    </div>
+                    <a class="support__btn" href="https://t.me/">
+                        <img src="fonts/tg.svg" alt="tg"> Открыть чат
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__start">
+                    <img class="footer__logo" src="fonts/Logo small white.svg" alt="logo">
+                    <div class="footer__text">
+                        ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2022 </div>
+                </div>
+                <div class="footer__end">
+                    <a class="footer__link" href="https://t.me/">
+                        <img src="fonts/tg(1).svg" alt="tg">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('.support__btn').setAttribute("href", tg_link)
+        document.querySelector('.footer__link').setAttribute("href", tg_link)
+    </script>
+    <script src="js/send.js"></script>
+    <script src="main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/yii.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/transaction.js"></script><!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'e83800a025775978b1ae021ded7765558bb5329c';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href="“https://www.smartsupp.com”" target="“_blank”">Smartsupp</a></noscript>
+
+</body>
+
+</html>
